@@ -1,0 +1,73 @@
+/* HERO: object-led. A drawn sectional door beside the copy; the door's handle is the phone number. */
+.hero{padding:clamp(36px,6vw,80px) 0 clamp(40px,6vw,88px);background:var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1 em{font-style:normal;color:var(--oxblood)}
+.lede{font-size:clamp(1.08rem,1.6vw,1.24rem);color:#3a373d}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 22px}
+.hero-facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0;padding:18px 0 0;border-top:1px solid var(--seam)}
+.hero-facts div{min-width:0}.hero-facts dt{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--slate);font-weight:700}
+.hero-facts dd{margin:2px 0 0;font-weight:600}
+.door{position:relative;background:var(--ink);padding:16px 16px 0;box-shadow:0 30px 60px -30px rgba(28,26,29,.55)}
+.door-frame{background:#d9d4ca;display:grid;gap:4px;padding:4px 4px 0}
+.panel{height:clamp(54px,7vw,82px);background:linear-gradient(#f2efe9,#dcd7cd);display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:9px}
+.panel i{border:1px solid #c6c0b4;box-shadow:inset 0 1px 0 #fff}
+.door-handle{position:absolute;left:50%;bottom:clamp(24px,4vw,40px);transform:translateX(-50%);width:max-content;max-width:calc(100% - 32px);background:var(--lamp);color:var(--ink);text-decoration:none;font:800 clamp(1.15rem,2.6vw,1.7rem) var(--disp);padding:14px 22px;border:3px solid var(--ink);display:flex;flex-direction:column;align-items:center;line-height:1.1}
+.door-handle small{font:700 .72rem var(--body);letter-spacing:.22em;text-transform:uppercase;margin-bottom:4px}
+.door-handle:hover{background:#fff}
+.door-cap{font-size:.85rem;color:var(--slate);margin:12px 0 0}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.door{max-width:520px}}
+/* fixes: a two-column ledger of what breaks */
+.breaks{padding:clamp(56px,8vw,104px) 0}
+.breaks-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,72px)}
+.breaks-head{position:sticky;top:24px;align-self:start}
+.ledger{list-style:none;margin:0;padding:0;border-top:3px solid var(--ink)}
+.ledger li{display:grid;grid-template-columns:3.2rem 1fr;gap:6px 16px;padding:18px 0;border-bottom:1px solid var(--seam)}
+.ledger .n{font:800 1.1rem var(--disp);color:var(--oxblood)}
+.ledger b{display:block;font-size:1.1rem}
+.ledger span{grid-column:2;color:#3a373d}
+@media (max-width:860px){.breaks-grid{grid-template-columns:1fr}.breaks-head{position:static}}
+/* install band, dark, grid break: the brand chips overhang */
+.install{padding:clamp(56px,8vw,100px) 0}
+.install-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:start}
+.brands{display:grid;gap:14px;margin-top:-90px}
+.brand{background:var(--paper);color:var(--ink);padding:22px 24px;border-left:8px solid var(--oxblood)}
+.brand b{font:800 1.5rem var(--disp);display:block}
+@media (max-width:860px){.install-grid{grid-template-columns:1fr}.brands{margin-top:0}}
+/* reviews: one big pull quote, then a strip */
+.voices{padding:clamp(56px,8vw,104px) 0}
+.pull{font:800 clamp(1.4rem,3vw,2.2rem)/1.2 var(--disp);margin:0 0 12px;max-width:30ch}
+.pull-cap{color:var(--slate);font-size:.95rem}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:36px 0 28px}
+.rcard{margin:0;background:var(--white);border:1px solid var(--seam);padding:22px;display:flex;flex-direction:column}
+.rcard blockquote{margin:10px 0 14px;flex:1}.rcard blockquote p{margin:0}
+.rcard figcaption{font-size:.88rem;color:var(--slate)}
+.rating{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.rating b{font:800 3.4rem/1 var(--disp);color:var(--oxblood)}
+/* area */
+.area{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);padding:0 clamp(16px,4vw,40px) clamp(56px,8vw,100px);align-items:center}
+@media (max-width:860px){.area{grid-template-columns:1fr}}
+/* sub pages */
+.sub{padding:clamp(40px,7vw,84px) 0 clamp(34px,5vw,60px)}
+.sub .seams{margin-top:22px}
+.svc{padding:clamp(40px,6vw,80px) 0;display:grid;gap:0}
+.svc-row{display:grid;grid-template-columns:4rem 1fr 1fr;gap:16px 32px;padding:28px 0;border-bottom:1px solid var(--seam)}
+.svc-row .n{font:800 1.4rem var(--disp);color:var(--oxblood)}
+.svc-row h2{font-size:clamp(1.4rem,2.6vw,1.9rem)}
+@media (max-width:760px){.svc-row{grid-template-columns:1fr}}
+.band{background:var(--concrete);padding:clamp(32px,5vw,56px);margin-bottom:clamp(48px,7vw,88px)}
+.rv-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;padding:clamp(40px,6vw,72px) clamp(16px,4vw,40px)}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,64px);padding:clamp(40px,6vw,80px) clamp(16px,4vw,40px)}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.facts dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;margin:0 0 clamp(48px,7vw,88px);border-top:3px solid var(--ink)}
+.facts dl div{padding:18px 16px 18px 0;border-bottom:1px solid var(--seam)}
+.facts dt{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--slate);font-weight:700}.facts dd{margin:4px 0 0;font-weight:600}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,64px);padding:clamp(40px,6vw,80px) clamp(16px,4vw,40px)}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.c-big{display:inline-flex;align-items:center;min-height:56px;font:800 clamp(1.7rem,4vw,2.4rem) var(--disp);text-decoration:none;color:var(--oxblood)}
+.c-mail{display:inline-flex;align-items:center;min-height:44px;word-break:break-all}
+.form{background:var(--white);border:1px solid var(--seam);padding:clamp(18px,3vw,32px)}
+.form fieldset{border:0;padding:0;margin:0}
+.form label{display:block;font-weight:600;margin-bottom:14px}
+.form input,.form select,.form textarea{display:block;width:100%;margin-top:6px;font:400 1rem var(--body);padding:12px;min-height:48px;border:1px solid #8d8893;background:#fff;color:var(--ink)}
+.form textarea{min-height:120px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}@media (max-width:560px){.two{grid-template-columns:1fr}}
