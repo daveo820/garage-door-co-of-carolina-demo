@@ -71,3 +71,4 @@
 .form input,.form select,.form textarea{display:block;width:100%;margin-top:6px;font:400 1rem var(--body);padding:12px;min-height:48px;border:1px solid #8d8893;background:#fff;color:var(--ink)}
 .form textarea{min-height:120px}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}@media (max-width:560px){.two{grid-template-columns:1fr}}
+.tl{display:inline-flex;align-items:center;min-height:44px;font-weight:700}

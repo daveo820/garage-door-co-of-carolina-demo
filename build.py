@@ -132,7 +132,7 @@ def sv(i,s):
     k,n,d,r = s
     side = (f'<blockquote class="note"><p>{r[2][:220].rsplit(" ",1)[0]}&hellip;</p><footer class="fine">Google review, {r[1]}</footer></blockquote>' if r else
             '<p class="note"><span class="ph">Placeholder</span> A photo from this kind of job and one line from Joel on how he handles it.</p>')
-    return f'<article id="{k}" class="svc-row rv"><span class="n">{i+1:02d}</span><div><h2>{n}</h2><p>{d}</p><a href="tel:{TEL}">Call about {n.lower()}</a></div>{side}</article>'
+    return f'<article id="{k}" class="svc-row rv"><span class="n">{i+1:02d}</span><div><h2>{n}</h2><p>{d}</p><a class="tl" href="tel:{TEL}">Call about {n.lower()}</a></div>{side}</article>'
 page('services.html','Garage Door Springs, Openers and New Doors | Wilmington',
  'Spring repair, cables, tracks, rollers, opener repair and new Amarr doors with LiftMaster openers from The Garage Door Co. of Carolina in Wilmington. Call Joel.', f'''
 <section class="sub on-dark"><div class="wrap">{K('Repairs and installs')}<h1>What Joel fixes and installs.</h1><p class="lede">Service descriptions are taken from the company&rsquo;s own site. Ask Joel what your door needs.</p>{SEAMS()}</div></section>
